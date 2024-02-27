@@ -164,7 +164,7 @@ class RegistrationForm extends Component
     // TODO: We can make these function as Helper function in future, but skip for now.
     public function getCounties()
     {
-        $filePath = storage_path('app/public/json/country.json'); // path to JSON file
+        $filePath = public_path('json/country.json'); // path to JSON file
         $jsonString = file_get_contents($filePath); // read the file into a string
         return json_decode($jsonString, true); // decode the JSON string into an associative array
     }
